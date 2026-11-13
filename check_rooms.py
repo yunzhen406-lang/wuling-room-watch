@@ -5,7 +5,7 @@
 有新空房時寄 email 通知。只使用 Python 標準函式庫。
 
 環境變數:
-  START_DATE   要監看的第一晚 (預設 2027-02-13)
+  START_DATE   要監看的第一晚 (預設 2027-02-04)
   END_DATE     要監看的最後一晚 (預設 2027-03-01)
   SMTP_USER    寄件 Gmail 帳號
   SMTP_PASS    Gmail 應用程式密碼 (App Password)
@@ -52,7 +52,7 @@ def env_date(name, default):
     return dt.date.fromisoformat(os.environ.get(name) or default)
 
 
-START = env_date("START_DATE", "2027-02-13")
+START = env_date("START_DATE", "2027-02-04")
 END = env_date("END_DATE", "2027-03-01")
 
 
