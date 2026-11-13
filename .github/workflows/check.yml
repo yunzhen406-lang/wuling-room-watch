@@ -30,7 +30,7 @@ jobs:
 
       - name: 查詢空房
         env:
-          START_DATE: "2027-02-13"
+          START_DATE: "2027-02-11"
           END_DATE: "2027-03-01"
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
